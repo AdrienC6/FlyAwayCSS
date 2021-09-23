@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="shortcut icon" type="image/svg" href="/svg.svg" />
+    <script src="https://kit.fontawesome.com/f83f06d8bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="flyaway.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="block.html">Blocks</a>
+        <a href="form.html">Forms</a>
+        <a href="navbar.html">Navbars</a>
+        <a href="accordion.html">Accordions</a>
+        <a href="popup.html">Popups</a>
+    </nav>
+    <h1>Navbar</h1>
+    <section class="component">
+        <div data-copy="navbar1" class="component-container" id="nav-container">
+            <nav class="navbar">
+                <p class="nav-item-nomobile">Item 1</p>
+                <p class="nav-item-nomobile">Item 2</p>
+                <p class="nav-item-nomobile">Item 3</p>
+                <p class="nav-item-nomobile">Item 4</p>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars mobile-open"></i>
+                    <div class="mobile-items">
+                        <p>Item 1</p>
+                        <p>Item 2</p>
+                        <p>Item 3</p>
+                        <p>Item 4</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section class="code-content">
+            <pre class="html">
+    &lt;nav <span class="pre-class">class="navbar"</span>>
+        &lt;p <span class="pre-class">class="nav-item-nomobile"</span>><span class="pre-text">Item</span>&lt;/p>
+        &lt;p <span class="pre-class">class="nav-item-nomobile"</span>><span class="pre-text">Item</span>&lt;/p>
+        &lt;p <span class="pre-class">class="nav-item-nomobile"</span>><span class="pre-text">Item</span>&lt;/p>
+        &lt;p <span class="pre-class">class="nav-item-nomobile"</span>><span class="pre-text">Item</span>&lt;/p>
+        &lt;div <span class="pre-class">class="mobile-menu"</span>>
+            &lt;i <span class="pre-class">class="fas fa-bars mobile-open"</span>>&lt;/i>
+            &lt;div <span class="pre-class">class="mobile-items"</span>>
+                &lt;p><span class="pre-text">Item</span>&lt;/p>
+                &lt;p><span class="pre-text">Item</span>&lt;/p>
+                &lt;p><span class="pre-text">Item</span>&lt;/p>
+                &lt;p><span class="pre-text">Item</span>&lt;/p>
+            &lt;/div>
+        &lt;/div>
+    &lt;/nav>
+            </pre>
+            <button class="copy-btn" data-copy="navbar">Copier</button>
+        </section>
+    </section>
+
+    <script src="app.js"></script>
+    <script src="soc.js"></script>
+</body>
+
+</html>

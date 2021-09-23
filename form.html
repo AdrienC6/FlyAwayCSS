@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="shortcut icon" type="image/svg" href="/svg.svg" />
+    <script src="https://kit.fontawesome.com/f83f06d8bc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="flyaway.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="block.html">Blocks</a>
+        <a href="form.html">Forms</a>
+        <a href="navbar.html">Navbars</a>
+        <a href="accordion.html">Accordions</a>
+        <a href="popup.html">Popups</a>
+    </nav>
+    <h1>Formulaire</h1>
+    <section class="component">
+        <div data-copy="form1" class="component-container">
+            <form action="" class="form">
+                <h2 class="form-title">Inscription</h2>
+                <div class="form-item">
+                    <label for="" class="form-item-label">Email</label>
+                    <input type="email" class="form-item-field" placeholder="Email">
+                </div>
+                <div class="form-item">
+                    <label for="" class="form-item-label">Nom</label>
+                    <input type="text" class="form-item-field" placeholder="Nom">
+                </div>
+                <div class="form-item">
+                    <button class="form-item-submit">Click Here</button>
+                </div>
+                <div id="form-alert" class="alert-green">Message de soumission</div>
+            </form>
+        </div>
+        <section class="code-content">
+            <pre class="html">
+        &lt;form action="" class="form"&gt;
+            &lt;div <span class="pre-class">class="form-item"</span>&gt;
+                &lt;label for="" <span class="pre-class">class="form-item-label"</span>><span class="pre-text"> Email </span>&lt;/label&gt;
+                &lt;input type="email" <span class="pre-class">class="form-item-field"</span> placeholder="<span class="pre-text">Email</span>"&gt;
+            &lt;/div&gt;
+            &lt;div <span class="pre-class">class="form-item"</span>&gt;
+                &lt;label for="" <span class="pre-class">class="form-item-label"</span>><span class="pre-text"> Nom </span>&lt;/label&gt;
+                &lt;input type="<span class="pre-text">text</span>" <span class="pre-class">class="form-item-field"</span> placeholder="<span class="pre-text">Nom</span>"&gt;
+            &lt;/div&gt;
+            &lt;div <span class="pre-class">class="form-item"</span>&gt;
+                &lt;button <span class="pre-class">class="form-item-submit"</span>&gt;<span class="pre-text"> Click !</span> &lt;/button&gt;
+            &lt;/div>
+            &lt;div <span class="pre-id">id="form-alert"</span> <span class="pre-class">class="alert-red"</span>><span class="pre-text"> Message </span>&lt;/div&gt;
+        &lt;/form&gt;
+                </pre>
+            <button class="copy-btn" data-copy="form">Copier</button>
+        </section>
+    </section>
+
+    <script src="app.js"></script>
+    <script src="soc.js"></script>
+</body>
+
+</html>

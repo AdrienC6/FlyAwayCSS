@@ -1,0 +1,319 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1% 0;
+}
+
+.form .form-title {
+  text-align: center;
+  width: 90%;
+  margin: auto auto 20px;
+}
+
+.form .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.form .form-item .form-item-label {
+  opacity: 0.8;
+}
+
+.form .form-item .form-item-field {
+  margin-top: 0.5%;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+.form .form-item .form-item-field[placeholder] {
+  text-align: center;
+  opacity: 0.7;
+}
+
+.form .form-item .form-item-submit {
+  width: 50%;
+  margin: 2% auto;
+  border-radius: 10px;
+  border: none;
+  background: #0083b0;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.form .form-item .form-item-submit:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.form #form-alert {
+  width: 90%;
+  margin: 2% auto;
+  text-align: center;
+  padding: 0.5% 0;
+  opacity: 0;
+}
+
+.accordion-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid grey;
+}
+
+.accordion-head:hover {
+  cursor: pointer;
+}
+
+.accordion-body {
+  display: none;
+}
+
+.carousel {
+  width: 80%;
+  margin: auto;
+}
+
+.carousel .carousel-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0;
+}
+
+.carousel .carousel-controls i:hover {
+  cursor: pointer;
+}
+
+.carousel .carousel-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carousel .carousel-body .carousel-pic {
+  margin: auto;
+}
+
+.carousel .carousel-body .carousel-miniatures {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel .carousel-body .carousel-miniatures .carousel-miniature {
+  width: 90px;
+  margin: auto 10px;
+}
+
+.carousel .carousel-body .carousel-miniatures .carousel-miniature:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.popup {
+  height: 100vh;
+  width: 100vw;
+  -webkit-backdrop-filter: blur(2px) brightness(75%);
+          backdrop-filter: blur(2px) brightness(75%);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.popup .close-popup:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar .nav-item-nomobile:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .nav-item-nomobile {
+    display: none;
+  }
+}
+
+.navbar .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .mobile-menu {
+    display: none;
+  }
+}
+
+.navbar .mobile-menu i:hover {
+  cursor: pointer;
+}
+
+.navbar .mobile-menu .mobile-items {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .mobile-menu .mobile-items {
+    display: none;
+  }
+}
+
+.navbar .mobile-menu .mobile-items p {
+  margin: 0 auto;
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+}
+
+.alert-red {
+  background: rgba(233, 70, 70, 0.842);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.alert-green {
+  background: rgba(137, 218, 137, 0.842);
+  color: #056e05;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.alert-blue {
+  background: rgba(109, 167, 255, 0.842);
+  color: #000052;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.alert-grey {
+  background: rgba(194, 194, 194, 0.842);
+  color: #242424;
+  text-align: center;
+  padding: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=flyaway.css.map */
