@@ -1,0 +1,86 @@
+.flyaway-home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-evenly;
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flyaway-home-section {
+        width: 50%;
+        padding-bottom: 20px;
+        @media screen and (max-width: 992px) {
+            padding: 0 0 20px 0;
+            text-align: center;
+            width: 100%;
+            margin: 50px auto;
+        }
+        .flyaway-starter {
+            width: 100%;
+            margin-top: 50px;
+            @media screen and (max-width: 992px) {
+                display: flex;
+                flex-direction: column;
+            }
+            button {
+                margin: auto 20px auto auto;
+                min-width: 200px;
+                height: 50px;
+                border-radius: 20px;
+                border: none;
+                font-weight: 600;
+                @media screen and (max-width: 992px) {
+                    margin: 20px auto;
+                }
+                &:hover {
+                    transform: scale(1.05);
+                    cursor: pointer;
+                    box-shadow: 4px 4px 10px 3px lightgray;
+                }
+                &#flyaway-getstarted {
+                    background: $blue1;
+                    color: #fff;
+                    border: 2px solid #fff;
+                }
+                &#flyaway-documentation {
+                    background: #fff;
+                    color: $blue1;
+                    border: 2px solid $blue1;
+                }
+            }
+        }
+        .flyaway-home-titles {
+            width: 100%;
+            h2 {
+                font-size: 60px;
+                @media screen and (max-width: 992px) {
+                    font-size: 35px;
+                }
+            }
+            p {
+                font-size: 30px;
+                @media screen and (max-width: 992px) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .flyaway-home-picture {
+        background: url("../public/images/svg.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
+        height: 100%;
+        width: 40%;
+        @media screen and (max-width: 992px) {
+            width: 90%;
+            background-position: center center;
+            margin-bottom: 50px;
+        }
+    }
+}

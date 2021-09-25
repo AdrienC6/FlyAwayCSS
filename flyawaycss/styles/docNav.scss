@@ -1,0 +1,33 @@
+#navbar-website {
+    background: $blue1;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-bottom: 2px solid $blue1;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    @media screen and (max-width: 992px) {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .mobile-items {
+        background: $blue1;
+        color: #fff;
+    }
+    p {
+        opacity: 0.75;
+        &:hover,
+        &.active {
+            opacity: 1;
+        }
+    }
+}

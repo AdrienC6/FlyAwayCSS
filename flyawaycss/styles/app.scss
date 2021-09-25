@@ -1,0 +1,33 @@
+@import "./parameters.scss";
+@import "./home.scss";
+@import "./docNav.scss";
+@import "./footer.scss";
+
+// GLOBAL
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $blue1 white;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $blue1;
+    border-radius: 20px;
+    border: 3px solid #fff;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: $font1;
+    .flyaway-page {
+        min-height: 100vh;
+    }
+}

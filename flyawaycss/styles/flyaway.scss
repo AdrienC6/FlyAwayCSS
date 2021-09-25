@@ -1,0 +1,212 @@
+// 1. BLOCKS
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+}
+// 2. FORMS
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1% 0;
+    .form-title {
+        text-align: center;
+        width: 90%;
+        margin: auto auto 20px;
+    }
+    .form-item {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        width: 80%;
+        .form-item-label {
+            opacity: 0.8;
+        }
+        .form-item-field {
+            margin-top: 0.5%;
+            border-radius: 10px;
+            border: 1px solid grey;
+            &[placeholder] {
+                text-align: center;
+                opacity: 0.7;
+            }
+        }
+        .form-item-submit {
+            width: 50%;
+            margin: 2% auto;
+            border-radius: 10px;
+            border: none;
+            background: #0083b0;
+            color: #fff;
+            padding: 5px 0;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+        }
+    }
+    #form-alert {
+        width: 90%;
+        margin: 2% auto;
+        text-align: center;
+        padding: 0.5% 0;
+        opacity: 0;
+    }
+}
+// 3. ACCORDION
+.accordion {
+    &-head {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        border: 1px solid grey;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &-body {
+        display: none;
+    }
+}
+// 4. CAROUSEL
+.carousel {
+    width: 80%;
+    margin: auto;
+    .carousel-controls {
+        display: flex;
+        width: 50%;
+        margin: auto;
+        justify-content: space-around;
+        padding: 20px 0;
+        i:hover {
+            cursor: pointer;
+        }
+    }
+    .carousel-body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .carousel-pic {
+            margin: auto;
+        }
+        .carousel-miniatures {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .carousel-miniature {
+                width: 90px;
+                margin: auto 10px;
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+// 5. POP UP
+.popup {
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(2px) brightness(75%);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    .close-popup:hover {
+        cursor: pointer;
+    }
+}
+// 6. NAV
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    .nav-item-nomobile {
+        &:hover {
+            cursor: pointer;
+        }
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        z-index: 999;
+        @media screen and (min-width: 992px) {
+            display: none;
+        }
+
+        i:hover {
+            cursor: pointer;
+        }
+        .mobile-items {
+            width: 100%;
+            // position: absolute;
+            text-align: center;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            @media screen and (min-width: 992px) {
+                display: none;
+            }
+            p {
+                height: 40px;
+                width: 100%;
+                line-height: 40px;
+            }
+        }
+    }
+}
+// X. PARAMETERS
+.alert-red {
+    background: rgba(233, 70, 70, 0.842);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+.alert-green {
+    background: rgba(137, 218, 137, 0.842);
+    color: rgb(5, 110, 5);
+    text-align: center;
+    padding: 5px 0;
+}
+.alert-blue {
+    background: rgba(109, 167, 255, 0.842);
+    color: rgb(0, 0, 82);
+    text-align: center;
+    padding: 5px 0;
+}
+.alert-grey {
+    background: rgba(194, 194, 194, 0.842);
+    color: rgb(36, 36, 36);
+    text-align: center;
+    padding: 5px 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
